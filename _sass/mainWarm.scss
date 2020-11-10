@@ -1,7 +1,19 @@
+//Theme
+$text: #3c2621;
+$bg: #f9f4ed;
+$light-accent: #d2c7bd;
+$bright-accent: #a1442c;
+$bright-accent2: #5b0004;
+
+
 body {
-  font-family: "Helvetica";
-  color: #2c2c2c;
-  background-color: #f5f5f5;
+  font-family: 'Helvetica';
+  color: $text;
+  background-color: $bg;
+}
+
+p {
+  font-family: 'Lora';
 }
 
 h1 {
@@ -12,7 +24,7 @@ h1 {
 }
 
 a {
-  color: #2c2c2c;
+  color: $text;
   font-weight: bold;
   padding: 5px;
   text-decoration: none;
@@ -33,8 +45,8 @@ h2 {
 }
 
 p {
-font-size: 18px;
-font-weight: 400;
+font-size: 20px;
+font-weight: 300;
 line-height: 1.6;
 }
 
@@ -45,7 +57,6 @@ line-height: 1.6;
   height: 50px;
   width: 85vw;
   position: fixed;
-  font-size: 32px;
   /*
   background-color: #f5f5f5;
   border: none;
@@ -55,17 +66,21 @@ line-height: 1.6;
   */
 }
 
+.header a {
+  font-size: 26px;
+}
+
 .header a:hover {
   //text-decoration: none;
 }
 
 .katie-header{
-  color: #2680eb;
+  color: $bright-accent;
   text-decoration: underline;
 }
 
 .current {
-  color: #2680eb;
+  color: $bright-accent;
   text-decoration: underline;
 }
 
@@ -74,7 +89,7 @@ line-height: 1.6;
   flex-direction: column;
   position: fixed;
   margin-left: 6vw;
-  top: 16vh;
+  top: 15vh;
   overflow: hidden;
   font-size: 26px;
 }
@@ -111,13 +126,27 @@ line-height: 1.6;
   margin-top: 16vh;
   align-items: flex-start;
   margin-right: 10vw;
-  overflow: hidden;
 }
 
 .page-wrapper p {
   max-width: 700px;
   //padding-bottom: 20px;
 }
+
+/*
+.katie-page-wrapper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+.katie-page-wrapper-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+*/
 
 .katie-page-wrapper h1 {
   font-size: 50px;
@@ -155,21 +184,57 @@ line-height: 1.6;
 }
 
 .blog-post-list {
-  width: 850px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding-left: 0;
   flex-wrap: wrap;
+  overflow: visible;
+}
+
+.blog-post-list-items p {
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .blog-post-list-items h2 {
   margin-bottom: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.blog-post-list-items a {
+  margin-bottom: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .blog-post-list-items {
-  max-width: 400px;
+  width: 300px;
+  margin-right: 40px;
   margin-bottom: 20px;
+}
+
+.blog-post-list-items img {
+  height: 250px;
+  width: 200px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+}
+
+.categories h2 {
+  background-color: white;
+  outline-color: $text;
+  border: 1px solid;
+  margin-right: 20px;
+}
+
+.recent-posts h1 {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 .tags {
@@ -181,7 +246,7 @@ line-height: 1.6;
 }
 
 .resume-link a {
-  background-color: #2680eb;
+  background-color: $bright-accent;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -226,18 +291,18 @@ line-height: 1.6;
   margin-bottom: 30px;
   font-size: 18px;
   font-family: "Helvetica";
-  color: #2c2c2c;
+  color: $text;
   outline: none;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: #2c2c2c;
+  border-bottom-color: $text;
   background-color: transparent;
   height: 30px;
 }
 
 .contact-form input::placeholder, textarea::placeholder {
-  color: #2c2c2c;
+  color: $text;
 }
 
 .contact-form textarea {
@@ -249,11 +314,11 @@ line-height: 1.6;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: #2680eb;
+  border-bottom-color: $bright-accent;
 }
 
 .contact-form input:focus::placeholder, textarea:focus::placeholder {
-  color: #A9A9A9;
+  color: $light-accent;
 }
 
 .contact-form input:focus {
@@ -262,7 +327,7 @@ line-height: 1.6;
 
 .contact-form button {
   outline: none;
-  background-color: #2680eb;
+  background-color: $bright-accent;
   color: white;
   border: none;
   border-radius: 5px;
@@ -286,5 +351,9 @@ line-height: 1.6;
   bottom: 25px;
   margin-left: 6vw;
   height: 50px;
-  width: 85vw;
+  width: 90vw;
+}
+
+.footer a {
+  font-weight: 400;
 }

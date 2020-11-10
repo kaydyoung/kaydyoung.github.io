@@ -10,15 +10,13 @@ h2 { font-size: 22px; font-weight: 400; margin-top: 0; margin-bottom: 30px; padd
 
 p { font-size: 18px; font-weight: 400; line-height: 1.6; }
 
-.header { top: 0; padding-top: 40px; margin-left: 6vw; height: 50px; width: 85vw; position: fixed; /* background-color: #f5f5f5; border: none; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #2c2c2c; */ }
-
-.header a { font-size: 26px; }
+.header { top: 0; padding-top: 40px; margin-left: 6vw; height: 50px; width: 85vw; position: fixed; font-size: 32px; /* background-color: #f5f5f5; border: none; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #2c2c2c; */ }
 
 .katie-header { color: #2680eb; text-decoration: underline; }
 
 .current { color: #2680eb; text-decoration: underline; }
 
-.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 6vw; top: 15vh; overflow: hidden; font-size: 26px; }
+.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 6vw; top: 16vh; overflow: hidden; font-size: 26px; }
 
 .side-nav a { margin-bottom: 7px; }
 
@@ -32,7 +30,6 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; }
 
 .page-wrapper p { max-width: 700px; }
 
-/* .katie-page-wrapper-row { display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 3vh; } .katie-page-wrapper-column { display: flex; flex-direction: column; margin-left: 3vw; } */
 .katie-page-wrapper h1 { font-size: 50px; font-weight: bold; margin-top: 0; margin-bottom: 15px; max-width: 525px; }
 
 .katie-page-wrapper img { max-height: 175px; width: auto; border-radius: 50%; margin-bottom: 20px; }
