@@ -1,0 +1,58 @@
+---
+layout: myblog
+title: Blog
+---
+{% comment %}
+=======================
+The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+=======================
+{% endcomment %}
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+  {% assign ttags = post.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% comment %}
+=======================
+The following part removes duplicated tags and invalid tags like blank tag.
+=======================
+{% endcomment %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+  {% if tag != "" %}
+    {% if tags == "" %}
+      {% assign tags = tag | split:'|' %}
+    {% endif %}
+    {% unless tags contains tag %}
+      {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<div class="page-wrapper">
+  <h1>Recent</h1>
+
+<div class="tags">
+{% for tag in tags %}
+	<a href="#{{ tag | slugify }}"> #{{ tag }} </a>
+{% endfor %}
+</div>
+
+  <ul class="blog-post-list">
+    {% for post in site.posts %}
+      <div class="blog-post-list-items">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </div>
+    {% endfor %}
+  </ul>
+
+  {% if post.tags contains tag %}
+  {% for tag in post.tags %}
+    <a href="#{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
+  {% endif %}
+
+</div>

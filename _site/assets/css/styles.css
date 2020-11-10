@@ -1,0 +1,86 @@
+body { font-family: "Helvetica"; color: #2c2c2c; background-color: #f5f5f5; }
+
+h1 { margin-top: 0; font-size: 50px; font-weight: bold; margin-bottom: 30px; }
+
+a { color: #2c2c2c; font-weight: bold; padding: 5px; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+h2 { font-size: 22px; font-weight: 400; margin-top: 0; margin-bottom: 30px; padding: 5px; line-height: 1.4; }
+
+p { font-size: 18px; font-weight: 400; line-height: 1.6; }
+
+.header { top: 0; padding-top: 40px; margin-left: 6vw; height: 50px; width: 85vw; position: fixed; /* background-color: #f5f5f5; border: none; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #2c2c2c; */ }
+
+.header a { font-size: 26px; }
+
+.katie-header { color: #2680eb; text-decoration: underline; }
+
+.current { color: #2680eb; text-decoration: underline; }
+
+.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 6vw; top: 15vh; overflow: hidden; font-size: 26px; }
+
+.side-nav a { margin-bottom: 7px; }
+
+.side-nav a:hover { text-decoration: underline; }
+
+.interests { font-size: 50px; color: black; }
+
+.katie-page-wrapper { height: 100vh; margin-left: 40vw; display: flex; flex-direction: column; margin-top: 40vh; align-items: flex-start; margin-right: 10vw; overflow: hidden; }
+
+.page-wrapper { height: 100vh; margin-left: 35vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; overflow: hidden; }
+
+.page-wrapper p { max-width: 700px; }
+
+/* .katie-page-wrapper-row { display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: 3vh; } .katie-page-wrapper-column { display: flex; flex-direction: column; margin-left: 3vw; } */
+.katie-page-wrapper h1 { font-size: 50px; font-weight: bold; margin-top: 0; margin-bottom: 15px; max-width: 525px; }
+
+.katie-page-wrapper img { max-height: 175px; width: auto; border-radius: 50%; margin-bottom: 20px; }
+
+.katie-page-wrapper p { align-items: center; text-align: left; max-width: 600px; }
+
+.blog-post-header { display: flex; flex-direction: column; margin-bottom: 10px; width: 250px; }
+
+.blog-post-header h2 { margin-bottom: 0; font-weight: 400; font-size: 18px; font-style: italic; }
+
+.blog-post-list { width: 850px; display: flex; flex-direction: row; justify-content: space-between; padding-left: 0; flex-wrap: wrap; }
+
+.blog-post-list-items h2 { margin-bottom: 0; }
+
+.blog-post-list-items { max-width: 400px; margin-bottom: 20px; }
+
+.resume-link { margin-top: 20px; }
+
+.resume-link a { background-color: #2680eb; color: white; text-decoration: none; border-radius: 5px; padding: 10px; font-size: 18px; font-family: "Helvetica"; font-weight: 500; margin-top: 10px; }
+
+.resume-link a:hover { background-color: #1367cb; }
+
+.work-content { margin-top: 40px; }
+
+.social-icons { max-width: 600px; padding-top: 25px; }
+
+.social-icons img { padding-right: 50px; }
+
+.contact { margin-top: 60px; width: 100%; }
+
+.contact-form { display: flex; flex-direction: column; max-width: 600px; }
+
+.contact-form input, textarea { padding-top: 10px; padding-bottom: 10px; margin-bottom: 30px; font-size: 18px; font-family: "Helvetica"; color: #2c2c2c; outline: none; border: none; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #2c2c2c; background-color: transparent; height: 30px; }
+
+.contact-form input::placeholder, textarea::placeholder { color: #2c2c2c; }
+
+.contact-form textarea { resize: none; }
+
+.contact-form input:focus, textarea:focus { outline: none; border: none; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #2680eb; }
+
+.contact-form input:focus::placeholder, textarea:focus::placeholder { color: #A9A9A9; }
+
+.contact-form input:focus { outline: none; }
+
+.contact-form button { outline: none; background-color: #2680eb; color: white; border: none; border-radius: 5px; padding: 10px; align-items: center; font-size: 18px; font-weight: 500; margin-top: 15px; }
+
+.contact-form button:hover { outline: none; background-color: #1367cb; }
+
+.footer { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; bottom: 25px; margin-left: 6vw; height: 50px; width: 85vw; }
+
+/*# sourceMappingURL=styles.css.map */
