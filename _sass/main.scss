@@ -4,18 +4,39 @@ body {
   background-color: #f5f5f5;
 }
 
+.light-theme {
+  color: #2c2c2c;
+  background-color: #f5f5f5;
+}
+
+.light-theme a {
+  color: #2c2c2c;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dark-theme {
+  color: #AAAAAA;
+  background-color: #181818;
+}
+
+.dark-theme a {
+  color: #AAAAAA;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.btn-toggle {
+  
+}
+
 h1 {
   margin-top: 0;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
-}
-
-a {
-  color: #2c2c2c;
-  font-weight: bold;
-  padding: 5px;
-  text-decoration: none;
 }
 
 a:hover {

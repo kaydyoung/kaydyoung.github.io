@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/darkmodetoggle.js"></script>
     {% feed_meta %}
     {% seo %}
   </head>
-  <body>
+  <body class="dark-theme || light-theme">
+    <button class="btn-toggle">Toggle Dark Mode</button>
     {% include header.html %}
      {% include navigation.html %}
     {{ content }}
     {% include footer.html %}
   </body>
+
 </html>
