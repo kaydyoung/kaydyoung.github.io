@@ -1,19 +1,20 @@
 <!doctype html>
 <html>
   <head>
+    <script type="text/javascript" src="/assets/js/darkmodetoggle.js"></script>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="/assets/js/darkmodetoggle.js"></script>
     {% feed_meta %}
     {% seo %}
   </head>
-  <body class="light-theme || dark-theme"> <!-- swapped the light theme and dark theme order here, see if that does anything -->
-    <button class="btn-toggle">Toggle Dark Mode</button>
+  <body class="dark">
+    <button id="btn-toggle" onClick="toggleDark()">Light Mode</button>
     {% include header.html %}
      {% include navigation.html %}
     {{ content }}
     {% include footer.html %}
   </body>
+
 
 </html>

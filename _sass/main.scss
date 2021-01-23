@@ -1,42 +1,56 @@
-body {
-  font-family: "Helvetica";
-  color: #2c2c2c;
-  background-color: #f5f5f5;
+/* LIGHT MODE */
+.light {
+  --background: #f5f5f5;
+  --nav: #2680eb;
+  --titles: #2c2c2c;
+  --mainText: #2c2c2c;
+  --subText: #2c2c2c;
+  //--primary:
+  --secondary: #2680eb;          //use for buttons
+  //--secondary-darker:          //on hover
+  //--tertiary:
 }
 
-.light-theme {
-  color: #2c2c2c;
-  background-color: #f5f5f5;
+/* DARK MODE */
+.dark {
+  --background: #181818;
+  --nav: #AAAAAA;
+  --titles: #AAAAAA;
+  --mainText: #AAAAAA;
+  --subText: #AAAAAA;
+  //--primary:
+  //--secondary:
+  //--secondary-darker:
+  //--tertiary:
 }
 
-.light-theme a {
-  color: #2c2c2c;
-  font-weight: bold;
-  padding: 5px;
-  text-decoration: none;
-}
-
-.dark-theme {
-  color: #AAAAAA;
-  background-color: #181818;
-}
-
-.dark-theme a {
-  color: #AAAAAA;
-  font-weight: bold;
-  padding: 5px;
-  text-decoration: none;
-}
-
-.btn-toggle {
+#btn-toggle {
   
 }
+
+body {
+  font-family: "Helvetica";
+  color: var(--mainText);
+  background-color: var(--background);
+}
+
+a {
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.header a {
+  color: var(--nav);
+}
+
 
 h1 {
   margin-top: 0;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
+  color: var(--titles);
 }
 
 a:hover {
@@ -50,13 +64,14 @@ h2 {
   margin-bottom: 30px;
   padding: 5px;
   line-height: 1.4;
-  //max-width: 600px;
+  color: var(--titles);
 }
 
 p {
 font-size: 18px;
 font-weight: 400;
 line-height: 1.6;
+color: var(--mainText);
 }
 
 .header {
@@ -67,26 +82,10 @@ line-height: 1.6;
   width: 85vw;
   position: fixed;
   font-size: 32px;
-  /*
-  background-color: #f5f5f5;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #2c2c2c;
-  */
-}
-
-.header a:hover {
-  //text-decoration: none;
-}
-
-.katie-header{
-  color: #2680eb;
-  text-decoration: underline;
 }
 
 .current {
-  color: #2680eb;
+  color: var(--nav);
   text-decoration: underline;
 }
 
@@ -102,15 +101,11 @@ line-height: 1.6;
 
 .side-nav a {
   margin-bottom: 7px;
+  color: var(--nav);
 }
 
 .side-nav a:hover {
   text-decoration: underline;
-}
-
-.interests {
-  font-size: 50px;
-  color: black;
 }
 
 .katie-page-wrapper {
@@ -137,7 +132,6 @@ line-height: 1.6;
 
 .page-wrapper p {
   max-width: 700px;
-  //padding-bottom: 20px;
 }
 
 .katie-page-wrapper h1 {
@@ -202,7 +196,7 @@ line-height: 1.6;
 }
 
 .resume-link a {
-  background-color: #2680eb;
+  background-color: var(--secondary);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -214,7 +208,7 @@ line-height: 1.6;
 }
 
 .resume-link a:hover {
-  background-color: #1367cb;
+  background-color: var(--secondary-darker);
 }
 
 .work-content {
@@ -247,12 +241,12 @@ line-height: 1.6;
   margin-bottom: 30px;
   font-size: 18px;
   font-family: "Helvetica";
-  color: #2c2c2c;
+  color: var(--mainText);
   outline: none;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: #2c2c2c;
+  border-bottom-color: var(--primary);
   background-color: transparent;
   height: 30px;
 }
@@ -270,7 +264,7 @@ line-height: 1.6;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-bottom-color: #2680eb;
+  border-bottom-color: var(--secondary);
 }
 
 .contact-form input:focus::placeholder, textarea:focus::placeholder {
@@ -283,7 +277,7 @@ line-height: 1.6;
 
 .contact-form button {
   outline: none;
-  background-color: #2680eb;
+  background-color: var(--secondary);
   color: white;
   border: none;
   border-radius: 5px;
@@ -296,7 +290,7 @@ line-height: 1.6;
 
 .contact-form button:hover {
   outline: none;
-  background-color: #1367cb;
+  background-color: var(--secondary-darker);
 }
 
 .footer {

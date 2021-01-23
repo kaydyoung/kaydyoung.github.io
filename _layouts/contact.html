@@ -1,14 +1,16 @@
 <!doctype html>
 <html>
   <head>
+    <script type="text/javascript" src="/assets/js/darkmodetoggle.js"></script>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="module" src="/assets/js/myform.js"></script>
+    <script type="text/text/javascript" src="/assets/js/myform.js"></script>
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
+    <button id="btn-toggle" onClick="toggleDark()">Light Mode</button>
     {% include header.html %}
     {% include navigation.html %}
     {{ content }}
