@@ -1,10 +1,10 @@
 /* LIGHT MODE */
 .light {
-  --background: #f5f5f5;
+  --background: White;
   --nav: #2680eb;
   --titles: #2c2c2c;
-  --mainText: #2c2c2c;
-  --subText: #2c2c2c;
+  --mainText: #454545;
+  --subText: #454545;
   //--primary:
   --secondary: #2680eb;          //use for buttons
   //--secondary-darker:          //on hover
@@ -13,11 +13,11 @@
 
 /* DARK MODE */
 .dark {
-  --background: #181818;
-  --nav: #AAAAAA;
-  --titles: #AAAAAA;
-  --mainText: #AAAAAA;
-  --subText: #AAAAAA;
+  --background: #354349;
+  --nav: #DBE9D5;
+  --titles: #DBE9D5;
+  --mainText: #E8EBCF;
+  --subText: #E8EBCF;
   //--primary:
   //--secondary:
   //--secondary-darker:
@@ -25,7 +25,19 @@
 }
 
 #btn-toggle {
-  
+  outline: none;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 88%;
+  margin-top: 25px;
+  z-index: 100;
+  position: relative;
 }
 
 body {
@@ -41,7 +53,7 @@ a {
 }
 
 .header a {
-  color: var(--nav);
+  color: var(--titles);
 }
 
 
@@ -100,6 +112,7 @@ color: var(--mainText);
 }
 
 .side-nav a {
+  font-weight: lighter;
   margin-bottom: 7px;
   color: var(--nav);
 }
@@ -136,7 +149,7 @@ color: var(--mainText);
 
 .katie-page-wrapper h1 {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 15px;
   max-width: 525px;
