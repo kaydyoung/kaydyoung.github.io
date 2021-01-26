@@ -13,11 +13,12 @@
 
 /* DARK MODE */
 .dark {
-  --background: #354349;
-  --nav: #DBE9D5;
-  --titles: #DBE9D5;
-  --mainText: #E8EBCF;
-  --subText: #E8EBCF;
+  //--background: #354349;
+  --background: #161b22;
+  --nav: #6a737d;
+  --titles: #dbe9d5;
+  --mainText: #8b949e;
+  --subText: #8b949e;
   //--primary:
   //--secondary:
   //--secondary-darker:
@@ -34,7 +35,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  margin-left: 88%;
+  margin-left: 92%;
   margin-top: 25px;
   z-index: 100;
   position: relative;
@@ -168,42 +169,6 @@ color: var(--mainText);
   max-width: 600px;
 }
 
-.blog-post-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  width: 250px;
-}
-
-.blog-post-header h2 {
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: italic;
-}
-
-.blog-post-list {
-  width: 850px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 0;
-  flex-wrap: wrap;
-}
-
-.blog-post-list-items h2 {
-  margin-bottom: 0;
-}
-
-.blog-post-list-items {
-  max-width: 400px;
-  margin-bottom: 20px;
-}
-
-.tags {
-
-}
-
 .resume-link {
   margin-top: 20px;
 }
@@ -235,6 +200,14 @@ color: var(--mainText);
 
 .social-icons img {
   padding-right: 50px;
+  fill: var(--secondary);
+}
+
+.social-icons svg {
+  padding-right: 50px;
+  fill: var(--subText);
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .contact {
@@ -316,3 +289,72 @@ color: var(--mainText);
   height: 50px;
   width: 85vw;
 }
+
+/* EXPERIMENTAL: DARK MODE TOGGLE CUTE */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html { box-sizing: border-box; }
+
+.container {
+  align-items: center;
+  margin-left: 85%;
+  margin-right: 10vw;
+  margin-top: 25px;
+  z-index: 100;
+  position: relative;
+  transition: all 1s linear;
+
+  &.color {
+    background: #373737;
+  }
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  position: relative;
+
+  &__background {
+    position: fixed;
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    background: #FFB74D;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &.color {
+      background: #893fd7;
+    }
+  }
+
+  &__face {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+
+    &.move {
+      transform: translateX(90px);
+    }
+  }
+}
+
+/*
+  &__animation {
+    &.move {
+      animation: rotate .5s ease forwards;
+    }
+
+    &.move-reverse {
+      animation: rotate-reverse .5s ease forwards;
+    }
+  }
+*/
