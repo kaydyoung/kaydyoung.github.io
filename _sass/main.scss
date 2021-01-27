@@ -6,8 +6,8 @@
   --mainText: #454545;
   --subText: #454545;
   //--primary:
-  --secondary: #2680eb;          //use for buttons
-  //--secondary-darker:          //on hover
+  --secondary: #2680eb;
+  --secondary-darker: #0f52a3;
   //--tertiary:
 }
 
@@ -20,7 +20,7 @@
   --mainText: #8b949e;
   --subText: #8b949e;
   //--primary:
-  //--secondary:
+  --secondary: #8b949e;
   //--secondary-darker:
   //--tertiary:
 }
@@ -33,7 +33,7 @@
   border-radius: 5px;
   padding: 10px;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   margin-left: 92%;
   margin-top: 25px;
@@ -41,10 +41,16 @@
   position: relative;
 }
 
+//Why doesn't this work???
+button :hover {
+  background-color: var(--secondary-darker);
+}
+
 body {
   font-family: "Helvetica";
   color: var(--mainText);
   background-color: var(--background);
+  overflow: hidden;
 }
 
 a {
@@ -123,7 +129,6 @@ color: var(--mainText);
 }
 
 .katie-page-wrapper {
-  height: 100vh;
   margin-left: 40vw;
   display: flex;
   flex-direction: column;
@@ -134,14 +139,13 @@ color: var(--mainText);
 }
 
 .page-wrapper {
-  height: 100vh;
   margin-left: 35vw;
   display: flex;
   flex-direction: column;
   margin-top: 16vh;
   align-items: flex-start;
   margin-right: 10vw;
-  overflow: hidden;
+  margin-bottom: 5vh;
 }
 
 .page-wrapper p {
@@ -179,7 +183,7 @@ color: var(--mainText);
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Helvetica";
   font-weight: 500;
   margin-top: 10px;
@@ -279,82 +283,13 @@ color: var(--mainText);
   background-color: var(--secondary-darker);
 }
 
-.footer {
+/*.footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   bottom: 25px;
   margin-left: 6vw;
-  height: 50px;
+  margin-top: 35vh;
   width: 85vw;
-}
-
-/* EXPERIMENTAL: DARK MODE TOGGLE CUTE */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html { box-sizing: border-box; }
-
-.container {
-  align-items: center;
-  margin-left: 85%;
-  margin-right: 10vw;
-  margin-top: 25px;
-  z-index: 100;
-  position: relative;
-  transition: all 1s linear;
-
-  &.color {
-    background: #373737;
-  }
-}
-
-.btn {
-  width: 70px;
-  height: 30px;
-  position: relative;
-
-  &__background {
-    position: fixed;
-    width: 70px;
-    height: 30px;
-    border-radius: 50px;
-    background: #FFB74D;
-    cursor: pointer;
-    transition: all 1s ease;
-
-    &.color {
-      background: #893fd7;
-    }
-  }
-
-  &__face {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #fff;
-
-    &.move {
-      transform: translateX(90px);
-    }
-  }
-}
-
-/*
-  &__animation {
-    &.move {
-      animation: rotate .5s ease forwards;
-    }
-
-    &.move-reverse {
-      animation: rotate-reverse .5s ease forwards;
-    }
-  }
-*/
+}*/

@@ -1,12 +1,14 @@
 /* LIGHT MODE */
-.light { --background: White; --nav: #2680eb; --titles: #2c2c2c; --mainText: #454545; --subText: #454545; --secondary: #2680eb; }
+.light { --background: White; --nav: #2680eb; --titles: #2c2c2c; --mainText: #454545; --subText: #454545; --secondary: #2680eb; --secondary-darker: #0f52a3; }
 
 /* DARK MODE */
-.dark { --background: #161b22; --nav: #6a737d; --titles: #dbe9d5; --mainText: #8b949e; --subText: #8b949e; }
+.dark { --background: #161b22; --nav: #6a737d; --titles: #dbe9d5; --mainText: #8b949e; --subText: #8b949e; --secondary: #8b949e; }
 
-#btn-toggle { outline: none; background-color: var(--secondary); color: white; border: none; border-radius: 5px; padding: 10px; align-items: center; font-size: 14px; font-weight: 500; margin-left: 92%; margin-top: 25px; z-index: 100; position: relative; }
+#btn-toggle { outline: none; background-color: var(--secondary); color: white; border: none; border-radius: 5px; padding: 10px; align-items: center; font-size: 12px; font-weight: 500; margin-left: 92%; margin-top: 25px; z-index: 100; position: relative; }
 
-body { font-family: "Helvetica"; color: var(--mainText); background-color: var(--background); }
+button :hover { background-color: var(--secondary-darker); }
+
+body { font-family: "Helvetica"; color: var(--mainText); background-color: var(--background); overflow: hidden; }
 
 a { font-weight: bold; padding: 5px; text-decoration: none; }
 
@@ -30,9 +32,9 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .side-nav a:hover { text-decoration: underline; }
 
-.katie-page-wrapper { height: 100vh; margin-left: 40vw; display: flex; flex-direction: column; margin-top: 40vh; align-items: flex-start; margin-right: 10vw; overflow: hidden; }
+.katie-page-wrapper { margin-left: 40vw; display: flex; flex-direction: column; margin-top: 40vh; align-items: flex-start; margin-right: 10vw; overflow: hidden; }
 
-.page-wrapper { height: 100vh; margin-left: 35vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; overflow: hidden; }
+.page-wrapper { margin-left: 35vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; margin-bottom: 5vh; }
 
 .page-wrapper p { max-width: 700px; }
 
@@ -44,7 +46,7 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .resume-link { margin-top: 20px; }
 
-.resume-link a { background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; padding: 10px; font-size: 18px; font-family: "Helvetica"; font-weight: 500; margin-top: 10px; }
+.resume-link a { background-color: var(--secondary); color: white; text-decoration: none; border-radius: 5px; padding: 10px; font-size: 14px; font-family: "Helvetica"; font-weight: 500; margin-top: 10px; }
 
 .resume-link a:hover { background-color: var(--secondary-darker); }
 
@@ -76,27 +78,6 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .contact-form button:hover { outline: none; background-color: var(--secondary-darker); }
 
-.footer { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; bottom: 25px; margin-left: 6vw; height: 50px; width: 85vw; }
-
-/* EXPERIMENTAL: DARK MODE TOGGLE CUTE */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
-
-html { box-sizing: border-box; }
-
-.container { align-items: center; margin-left: 85%; margin-right: 10vw; margin-top: 25px; z-index: 100; position: relative; transition: all 1s linear; }
-
-.container.color { background: #373737; }
-
-.btn { width: 70px; height: 30px; position: relative; }
-
-.btn__background { position: fixed; width: 70px; height: 30px; border-radius: 50px; background: #FFB74D; cursor: pointer; transition: all 1s ease; }
-
-.btn__background.color { background: #893fd7; }
-
-.btn__face { position: absolute; top: 4px; left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; }
-
-.btn__face.move { transform: translateX(90px); }
-
-/* &__animation { &.move { animation: rotate .5s ease forwards; } &.move-reverse { animation: rotate-reverse .5s ease forwards; } } */
+/*.footer { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; bottom: 25px; margin-left: 6vw; margin-top: 35vh; width: 85vw; }*/
 
 /*# sourceMappingURL=styles.css.map */
