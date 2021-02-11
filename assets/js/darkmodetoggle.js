@@ -1,3 +1,5 @@
+/* Toggles Text to be Light or Dark Mode
+
 function toggleDark() {
   var mode = "";
   //if user toggles to dark mode, select dark class
@@ -7,8 +9,20 @@ function toggleDark() {
     mode = "Dark Mode"
     }
       //Mode will be the text inside the button: dark or light
-      document.getElementById("btn-toggle").innerHTML = mode;
+      document.getElementById("btn-toggle").innerHTML = mode; 
     }
+*/
+
+//Try to toggle image
+function toggleDark() {
+  var img = document.getElementById("modeimage");
+  //if user toggles to dark mode, select dark class
+  if (document.body.classList.toggle("dark")){
+    img.src("assets/images/moon.png")
+  } else {
+    img.src("assets/images/sun.png");
+    }
+}
 
 
 /* Saving Preferences
@@ -19,8 +33,3 @@ window.localStorage.setItem("pref", theme);
 
 window.localStorage.getItem("pref")
 */
-
-/* Code to change dark mode button a different color */
-document.getElementsByClassName('.btn__background').onClick(function() {
-  document.getElementsByClassName('.container').toggleClass('color');
-});
