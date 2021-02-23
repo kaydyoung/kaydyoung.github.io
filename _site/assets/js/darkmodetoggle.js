@@ -1,38 +1,23 @@
-/* Toggles Text to be Light or Dark Mode
-
-function toggleDark() {
-  var mode = "";
-  //if user toggles to dark mode, select dark class
-  if (document.body.classList.toggle("dark")){
-    mode = "Light Mode"
-  } else {
-    mode = "Dark Mode"
-    }
-      //Mode will be the text inside the button: dark or light
-      document.getElementById("btn-toggle").innerHTML = mode; 
-    }
-*/
-
-//Try to toggle image
+//Toggle Dark
 function toggleDark() {
   var img = document.getElementById("modeimage");
   //if user toggles to dark mode, select dark class
   if (document.body.classList.toggle("dark")){
-    img.src = "assets/images/sun.png"
-    console.log(img);
+    img.src = "assets/images/sun.svg"
   } else {
-    img.src = "assets/images/moon.png";
-    console.log(img);
+    img.src = "assets/images/moon.svg" 
     }
 }
 
 
-/* Saving Preferences */
+//Saving Preferences
+function onload() {
+  if (document.body.classList.toggle("dark")){
+    window.localStorage.setItem("mode", dark);
+  } else {
+    window.localStorage.setItem("mode", light);
+  }
+}
 
-const theme = document.getElementById("btn-toggle").innerHTML;
 
-window.localStorage.setItem("pref", theme);
-
-console.log(theme);
-
-//window.localStorage.getItem("pref");
+onload(window.localStorage.getItem("mode"));
