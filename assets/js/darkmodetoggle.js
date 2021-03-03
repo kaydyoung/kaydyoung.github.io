@@ -4,20 +4,9 @@ function toggleDark() {
   //if user toggles to dark mode, select dark class
   if (document.body.classList.toggle("dark")){
     img.src = "assets/images/sun.svg"
+    window.localStorage.setItem('mode', 'dark')
   } else {
-    img.src = "assets/images/moon.svg" 
+    img.src = "assets/images/moon.svg"
+    window.localStorage.setItem('mode', 'light')
     }
 }
-
-
-//Saving Preferences
-function onload() {
-  if (document.body.classList.toggle("dark")){
-    window.localStorage.setItem("mode", dark);
-  } else {
-    window.localStorage.setItem("mode", light);
-  }
-}
-
-
-onload(window.localStorage.getItem("mode"));

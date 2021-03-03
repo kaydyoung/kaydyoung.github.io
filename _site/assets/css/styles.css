@@ -1,5 +1,5 @@
 /* LIGHT MODE */
-.light { --background: White; --nav: #7c7c7c; --titles: #2c2c2c; --mainText: #2c2c2c; --subText: white; --secondary: #2680eb; --secondary-darker: #0f52a3; --tertiary: #DEDEDE; --tertiary-darker: #bdbdbd; --scrollbar: #DEDEDE; }
+.light { --background: White; --nav: #2680eb; --titles: #2c2c2c; --mainText: #2c2c2c; --subText: white; --secondary: #2680eb; --secondary-darker: #0f52a3; --tertiary: #DEDEDE; --tertiary-darker: #bdbdbd; --scrollbar: #DEDEDE; }
 
 /* DARK MODE */
 .dark { --background: #161b22; --nav: #7c7c7c; --titles: #c9d1d9; --mainText: #7c7c7c; --subText: white; --secondary: #0f52a3; --secondary-darker: #2680eb; --tertiary: #454545; --tertiary-darker: #585858; --scrollbar: #454545; }
