@@ -59,7 +59,7 @@
 }
 
 #modeimage:hover {
-  background-color: var(--tertiary-darker);;
+  background-color: var(--tertiary-darker);
 }
 
 button :hover {
@@ -87,14 +87,18 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
-a {
+/* a {
   font-weight: bold;
   padding: 5px;
   text-decoration: none;
 }
+*/
 
 .header a {
   color: var(--titles);
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
 }
 
 
@@ -156,6 +160,8 @@ color: var(--mainText);
   font-weight: lighter;
   margin-bottom: 7px;
   color: var(--nav);
+  padding: 3px;
+  text-decoration: none;
 }
 
 .side-nav a:hover {
@@ -237,17 +243,42 @@ color: var(--mainText);
   padding-top: 25px;
 }
 
-.social-icons img {
-  padding-right: 50px;
-  fill: var(--secondary);
+.social-icons a {
+    margin: 0;
+    width: 100;
 }
 
-.social-icons svg {
-  padding-right: 50px;
-  fill: var(--subText);
-  max-width: 50px;
-  max-height: 50px;
+.social-icons button {
+  margin-right: 50px;
+  box-shadow: none;
+  border: none;
+  background-color: var(--secondary);
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
 }
+
+.social-icons img {
+  height: 20px;
+  width: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.social-icons:hover{
+  box-shadow: none;
+}
+
+/*#linkedin-logo {
+  margin-right: 50px;
+  background: url(linkedin.svg);
+  height: 24px;
+  width: 24px;
+  color: red;
+  mask: url(linkedin.svg);
+}*/
+
 
 .contact {
   margin-top: 60px;

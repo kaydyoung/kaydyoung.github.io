@@ -9,4 +9,10 @@ function toggleDark() {
     img.src = "assets/images/moon.svg"
     window.localStorage.setItem('mode', 'light')
     }
+  
+    /*
+  var icon = document.getElementsByClassName("social-icons");
+  for each a in "social-icons"
+  Image.src = 
+  */
 }
