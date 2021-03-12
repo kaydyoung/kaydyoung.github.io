@@ -1,37 +1,27 @@
 //Toggle Dark
-function toggleDark() {
+function toggleTheme() {
   var img = document.getElementById("modeimage");
   //if user toggles to dark mode, select dark class
-  if (document.body.classList.toggle("dark")){
-    img.src = "assets/images/sun.svg"
-    window.localStorage.setItem("mode", "dark")
+  if (document.body.classList.contains("dark")){
+    turnOnTheme("light");
   } else {
-    img.src = "assets/images/moon.svg"
-    window.localStorage.setItem("mode", "light")
+    turnOnTheme("dark");
     }
-  //return window.localStorage.getItem("mode");
+  var currentTheme = localStorage.getItem("mode");
+  console.log(currentTheme);
+  //How to use returned value??
+  //return currentTheme;
+
 }
 
-
-// Get the current theme from local storage 
-var currentTheme = localStorage.getItem("mode");
-console.log(currentTheme);
-
-if (currentTheme === "dark") {
-  document.body.classList.toggle("dark")
-}
-
-/*
-// If the current local storage item can be found
-if (currentTheme) {
-  (document.body.classList.toggle(currentTheme))
-}
-  currentTheme = localStorage.setItem("mode", "dark")
-  // Set the body data-theme attribute to match the local storage item
-  document.body.classList.toggle(currentTheme);
-// If the current theme is dark, check the theme toggle
-  if (currentTheme == "dark") {
-    document.body.classList.toggle("dark");
+function turnOnTheme(themeName) {
+  document.body.classList.toggle("dark");
+  var img = document.getElementById("modeimage");
+  if (themeName == "dark") {
+    img.src = "assets/images/sun.svg"
+  } else if (themeName == "light") {
+    img.src = "assets/images/moon.svg"
   }
+  window.localStorage.setItem("mode", themeName)
 }
-*/
+  

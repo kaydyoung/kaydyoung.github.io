@@ -5,14 +5,19 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="text/text/javascript" src="/assets/js/myform.js"></script>
     {% feed_meta %}
     {% seo %}
   </head>
   <body class="light">
-    <button id="btn-toggle" onClick="toggleDark()"><img src="assets/images/moon.svg" id="modeimage"></button>
+    <button id="btn-toggle" onClick="toggleTheme()"><img src="assets/images/moon.svg" id="modeimage"></button>
     {% include header.html %}
     {% include navigation.html %}
     {{ content }}
+    <script>
+      // self executing function here
+      if (localStorage.getItem("mode") == "dark") {
+        turnOnTheme("dark");  
+    }
+    </script>
   </body>
 </html>

@@ -19,7 +19,7 @@
 
   </head>
   <body class="light">
-    <button id="btn-toggle" onClick="toggleDark()"><img src="assets/images/moon.svg" id="modeimage"></button>
+    <button id="btn-toggle" onClick="toggleTheme()"><img src="assets/images/moon.svg" id="modeimage"></button>
     <div class="header">
   <a href="/index.html" >Katie Young</a>
 </div>
@@ -47,7 +47,11 @@
     </div>
 </div>
 
+    <script>
+      // self executing function here
+      if (localStorage.getItem("mode") == "dark") {
+        turnOnTheme("dark");  
+    }
+    </script>
   </body>
-
-
 </html>
