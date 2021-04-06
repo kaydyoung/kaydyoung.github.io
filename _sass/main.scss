@@ -164,7 +164,8 @@ color: var(--mainText);
   margin-left: 38vw;
   display: flex;
   flex-direction: row;
-  margin-top: 32vh;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
   align-items: center;
   margin-right: 10vw;
   overflow: hidden;
@@ -207,12 +208,13 @@ color: var(--mainText);
 }
 
 .katie-page-bio {
-  margin-left: 35vw;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5vh;
-  align-items: flex-start;
-  margin-right: 10vw;
+  max-width: 600px;
+  margin-left: 38vw;
+}
+
+.katie-page-bio a {
+  font-weight: bold;
+  color: var(--mainText);
 }
 
 .resume-link {
@@ -251,7 +253,7 @@ color: var(--mainText);
 }
 
 .social-icons button {
-  margin-right: 50px;
+  margin-right: 30px;
   margin-bottom: 30px;
   box-shadow: none;
   border: none;
@@ -274,16 +276,6 @@ color: var(--mainText);
 .social-icons button:hover{
   background-color: var(--secondary-darker);
 }
-
-/*#linkedin-logo {
-  margin-right: 50px;
-  background: url(linkedin.svg);
-  height: 24px;
-  width: 24px;
-  color: red;
-  mask: url(linkedin.svg);
-}*/
-
 
 .contact {
   margin-top: 60px;
