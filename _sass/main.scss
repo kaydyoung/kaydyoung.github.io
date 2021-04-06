@@ -206,6 +206,15 @@ color: var(--mainText);
   max-width: 600px;
 }
 
+.katie-page-bio {
+  margin-left: 35vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  align-items: flex-start;
+  margin-right: 10vw;
+}
+
 .resume-link {
   margin-top: 20px;
 }
