@@ -9,8 +9,6 @@ function toggleTheme() {
     }
   var currentTheme = localStorage.getItem("mode");
   console.log(currentTheme);
-  //How to use returned value??
-  //return currentTheme;
 
 }
 
