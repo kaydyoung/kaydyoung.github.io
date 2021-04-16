@@ -180,7 +180,7 @@ color: var(--mainText);
 }
 
 .page-wrapper p {
-  max-width: 700px;
+  max-width: 725px;
 }
 
 .katie-page-wrapper h1 {
@@ -251,7 +251,6 @@ color: var(--mainText);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  //background-color: var(--accent);
   width: 700px;
   height: auto;
   padding-right: 10px;
@@ -266,7 +265,7 @@ ul {
   list-style-type: none;
   text-align: left;
   margin-left: 25px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.4;
   color: var(--mainText);
 }
@@ -278,7 +277,7 @@ li::before {
 }
 
 .product-box p {
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   padding-left: 10px;
   padding-right: 10px;
