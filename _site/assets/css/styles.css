@@ -115,6 +115,6 @@ li::before { content: "• "; padding-right: 4px; color: var(--mainText); }
 
 .contact-form button:hover { outline: none; background-color: var(--secondary-darker); }
 
-/*.footer { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; bottom: 25px; margin-left: 6vw; margin-top: 35vh; width: 85vw; }*/
+/*.footer { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; bottom: 25px; margin-left: 6vw; margin-top: 35vh; } */
 
 /*# sourceMappingURL=styles.css.map */
