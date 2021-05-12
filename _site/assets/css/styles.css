@@ -47,7 +47,7 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .page-wrapper { margin-left: 35vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; margin-bottom: 10vh; }
 
-.page-wrapper p { max-width: 725px; }
+.page-wrapper p { max-width: 750px; }
 
 .katie-page-wrapper h1 { font-size: 50px; font-weight: 600; margin-top: 0; margin-bottom: 15px; max-width: 525px; }
 
@@ -84,6 +84,18 @@ li::before { content: "• "; padding-right: 4px; color: var(--mainText); }
 .icon-descriptions img { height: 30px; width: auto; padding-bottom: 5px; }
 
 .product-content p { font-size: 12px; color: var(--mainText); margin-top: 0; text-align: center; }
+
+.project-container { display: flex; flex-direction: row; flex-wrap: wrap; }
+
+.project { position: relative; height: 50vh; width: 43vw; margin-right: 20px; margin-top: 30px; }
+
+.project img { height: 50vh; width: 43vw; border-radius: 10px; }
+
+.project:hover .overlay { opacity: 0.8; }
+
+.overlay { position: absolute; background-color: var(--secondary); border-radius: 10px; height: 50vh; width: 43vw; opacity: 0; top: 0; bottom: 0; left: 0; right: 0; transition: .5s ease; }
+
+.text { color: white; font-size: 24px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
 
 .social-icons { max-width: 600px; padding-top: 25px; }
 
