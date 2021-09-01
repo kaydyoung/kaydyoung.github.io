@@ -39,27 +39,27 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .header .current { text-decoration: underline; }
 
-.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 4vw; top: 22vh; overflow: hidden; font-size: 26px; }
+.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 4vw; top: 22vh; overflow: hidden; font-size: 32px; }
 
 .side-nav a { font-weight: lighter; margin-bottom: 7px; color: var(--nav); padding-bottom: 12px; text-decoration: none; }
 
 .side-nav a:hover { text-decoration: underline; }
 
-.katie-page-wrapper { margin-left: 38vw; display: flex; flex-direction: row; margin-top: 16vh; margin-bottom: 3vh; align-items: center; margin-right: 10vw; overflow: hidden; }
+.katie-page-wrapper { margin-left: 38vw; display: flex; flex-direction: row; margin-top: 16vh; margin-bottom: 6vh; align-items: center; overflow: hidden; }
 
-.page-wrapper { margin-left: 35vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; margin-bottom: 10vh; }
+.page-wrapper { margin-left: 38vw; display: flex; flex-direction: column; margin-top: 16vh; align-items: flex-start; margin-right: 10vw; margin-bottom: 10vh; }
 
 .page-wrapper p { max-width: 750px; }
 
-.katie-page-wrapper h1 { font-size: 50px; font-weight: 600; margin-top: 0; margin-bottom: 15px; max-width: 525px; }
+.katie-page-wrapper h1 { font-size: 50px; font-weight: 600; margin-top: 20px; max-width: 525px; }
 
-.katie-page-wrapper img { max-height: 185px; width: auto; margin-right: 35px; border-radius: 50%; margin-bottom: 20px; }
+.katie-page-wrapper img { max-height: 185px; width: auto; margin-right: 35px; border-radius: 50%; }
 
 .katie-page-wrapper p { align-items: center; text-align: left; max-width: 600px; }
 
 .katie-page-bio { max-width: 700px; margin-left: 38vw; }
 
-.katie-page-bio p { line-height: 2; }
+.katie-page-bio p { line-height: 2; font-size: 18px; }
 
 .katie-page-bio a { font-weight: bold; text-decoration: none; color: var(--mainText); }
 

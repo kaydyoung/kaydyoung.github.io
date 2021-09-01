@@ -146,7 +146,7 @@ color: var(--mainText);
   margin-left: 4vw;
   top: 22vh;
   overflow: hidden;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .side-nav a {
@@ -166,14 +166,13 @@ color: var(--mainText);
   display: flex;
   flex-direction: row;
   margin-top: 16vh;
-  margin-bottom: 3vh;
+  margin-bottom: 6vh;
   align-items: center;
-  margin-right: 10vw;
   overflow: hidden;
 }
 
 .page-wrapper {
-  margin-left: 35vw;
+  margin-left: 38vw;
   display: flex;
   flex-direction: column;
   margin-top: 16vh;
@@ -189,8 +188,7 @@ color: var(--mainText);
 .katie-page-wrapper h1 {
   font-size: 50px;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 20px;
   max-width: 525px;
 }
 
@@ -199,7 +197,6 @@ color: var(--mainText);
   width: auto;
   margin-right: 35px;
   border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 .katie-page-wrapper p {
@@ -215,6 +212,7 @@ color: var(--mainText);
 
 .katie-page-bio p {
   line-height: 2;
+  font-size: 18px;
 }
 
 .katie-page-bio a {
