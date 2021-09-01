@@ -1,5 +1,7 @@
 - name: About
   link: /about.html
+- name: Resume
+  link: /resume.html
 - name: Work
   link: /work.html
 - name: Projects

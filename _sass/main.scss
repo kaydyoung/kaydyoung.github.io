@@ -124,15 +124,18 @@ color: var(--mainText);
 .header {
   top: 0;
   padding-top: 40px;
-  margin-left: 6vw;
+  margin-left: 4vw;
   height: 50px;
   width: 85vw;
   position: fixed;
   font-size: 32px;
 }
 
-.current {
-  color: var(--nav);
+.side-nav .current {
+  text-decoration: underline;
+}
+
+.header .current {
   text-decoration: underline;
 }
 
@@ -140,7 +143,7 @@ color: var(--mainText);
   display: flex;
   flex-direction: column;
   position: fixed;
-  margin-left: 6vw;
+  margin-left: 4vw;
   top: 22vh;
   overflow: hidden;
   font-size: 26px;
@@ -192,7 +195,7 @@ color: var(--mainText);
 }
 
 .katie-page-wrapper img {
-  max-height: 175px;
+  max-height: 185px;
   width: auto;
   margin-right: 35px;
   border-radius: 50%;
@@ -210,9 +213,18 @@ color: var(--mainText);
   margin-left: 38vw;
 }
 
+.katie-page-bio p {
+  line-height: 2;
+}
+
 .katie-page-bio a {
   font-weight: bold;
+  text-decoration: none;
   color: var(--mainText);
+}
+
+.katie-page-bio a:hover {
+  text-decoration: underline;
 }
 
 .resume-link {
@@ -245,7 +257,6 @@ color: var(--mainText);
   border-radius: 10px;
   margin-bottom: 10vh;
 }
-
 
 .product-box {
   display: flex;

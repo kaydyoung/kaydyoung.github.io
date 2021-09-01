@@ -33,11 +33,13 @@ h2 { font-size: 26px; font-weight: normal; margin-bottom: 20px; margin-top: 20px
 
 p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText); }
 
-.header { top: 0; padding-top: 40px; margin-left: 6vw; height: 50px; width: 85vw; position: fixed; font-size: 32px; }
+.header { top: 0; padding-top: 40px; margin-left: 4vw; height: 50px; width: 85vw; position: fixed; font-size: 32px; }
 
-.current { color: var(--nav); text-decoration: underline; }
+.side-nav .current { text-decoration: underline; }
 
-.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 6vw; top: 22vh; overflow: hidden; font-size: 26px; }
+.header .current { text-decoration: underline; }
+
+.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 4vw; top: 22vh; overflow: hidden; font-size: 26px; }
 
 .side-nav a { font-weight: lighter; margin-bottom: 7px; color: var(--nav); padding-bottom: 12px; text-decoration: none; }
 
@@ -51,13 +53,17 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .katie-page-wrapper h1 { font-size: 50px; font-weight: 600; margin-top: 0; margin-bottom: 15px; max-width: 525px; }
 
-.katie-page-wrapper img { max-height: 175px; width: auto; margin-right: 35px; border-radius: 50%; margin-bottom: 20px; }
+.katie-page-wrapper img { max-height: 185px; width: auto; margin-right: 35px; border-radius: 50%; margin-bottom: 20px; }
 
 .katie-page-wrapper p { align-items: center; text-align: left; max-width: 600px; }
 
 .katie-page-bio { max-width: 700px; margin-left: 38vw; }
 
-.katie-page-bio a { font-weight: bold; color: var(--mainText); }
+.katie-page-bio p { line-height: 2; }
+
+.katie-page-bio a { font-weight: bold; text-decoration: none; color: var(--mainText); }
+
+.katie-page-bio a:hover { text-decoration: underline; }
 
 .resume-link { margin-top: 5px; }
 
