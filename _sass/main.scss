@@ -16,7 +16,6 @@
 
 /* DARK MODE */
 .dark {
-  //--background: #354349;
   --background: #161b22;
   --nav: #cde6d7;
   --titles: #cde6d7;
@@ -44,7 +43,7 @@
   align-content: center;
   font-size: 12px;
   font-weight: 500;
-  margin-left: 95.5%;
+  margin-left: 96%;
   margin-top: 25px;
   z-index: 100;
 }
@@ -123,12 +122,12 @@ color: var(--mainText);
 
 .header {
   top: 0;
-  padding-top: 40px;
+  padding-top: 10vh;
   margin-left: 4vw;
   height: 50px;
   width: 85vw;
   position: fixed;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .side-nav .current {
@@ -146,7 +145,7 @@ color: var(--mainText);
   margin-left: 4vw;
   top: 22vh;
   overflow: hidden;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .side-nav a {
@@ -172,7 +171,7 @@ color: var(--mainText);
 }
 
 .page-wrapper {
-  margin-left: 38vw;
+  margin-left: 32vw;
   display: flex;
   flex-direction: column;
   margin-top: 16vh;
@@ -182,7 +181,7 @@ color: var(--mainText);
 }
 
 .page-wrapper p {
-  max-width: 750px;
+  max-width: 850px;
 }
 
 .katie-page-wrapper h1 {
