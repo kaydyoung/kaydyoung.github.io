@@ -224,6 +224,29 @@ color: var(--mainText);
   text-decoration: underline;
 }
 
+.about {
+  margin-bottom: 5vh;
+}
+
+.about ul {
+  padding: 0;
+  margin: 0;
+}
+
+.about li {
+  padding-bottom: 10px;
+}
+
+.about a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--mainText);
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
 .resume-link {
   margin-top: 5px;
 }
