@@ -43,8 +43,9 @@
   align-content: center;
   font-size: 12px;
   font-weight: 500;
-  margin-left: 96%;
+  margin-left: 95%;
   margin-top: 25px;
+  margin-right: 50px;
   z-index: 100;
 }
 
@@ -143,7 +144,7 @@ color: var(--mainText);
   flex-direction: column;
   position: fixed;
   margin-left: 4vw;
-  top: 22vh;
+  top: 25px;
   overflow: hidden;
   font-size: 30px;
 }
@@ -174,10 +175,10 @@ color: var(--mainText);
   margin-left: 32vw;
   display: flex;
   flex-direction: column;
-  margin-top: 16vh;
+  margin-top: 25%;
   align-items: flex-start;
   margin-right: 10vw;
-  margin-bottom: 10vh;
+  margin-bottom: 25%;
 }
 
 .page-wrapper p {

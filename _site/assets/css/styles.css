@@ -5,7 +5,7 @@
 /* DARK MODE */
 .dark { --background: #161b22; --nav: #cde6d7; --titles: #cde6d7; --mainText: #a7a7a7; --subText: white; --accent: #353535; --secondary: #0f52a3; --secondary-darker: #2680eb; --tertiary: #454545; --tertiary-darker: #585858; --scrollbar: #454545; }
 
-#btn-toggle { outline: none; background-color: var(--tertiary); color: white; height: auto; width: 50px; border: none; border-radius: 5px; padding-top: 8px; padding-bottom: 6px; align-content: center; font-size: 12px; font-weight: 500; margin-left: 96%; margin-top: 25px; z-index: 100; }
+#btn-toggle { outline: none; background-color: var(--tertiary); color: white; height: auto; width: 50px; border: none; border-radius: 5px; padding-top: 8px; padding-bottom: 6px; align-content: center; font-size: 12px; font-weight: 500; margin-left: 95%; margin-top: 25px; margin-right: 50px; z-index: 100; }
 
 #btn-toggle:hover { background-color: var(--tertiary-darker); }
 
@@ -39,7 +39,7 @@ p { font-size: 18px; font-weight: 400; line-height: 1.6; color: var(--mainText);
 
 .header .current { text-decoration: underline; }
 
-.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 4vw; top: 22vh; overflow: hidden; font-size: 30px; }
+.side-nav { display: flex; flex-direction: column; position: fixed; margin-left: 4vw; top: 25px; overflow: hidden; font-size: 30px; }
 
 .side-nav a { font-weight: lighter; margin-bottom: 7px; color: var(--nav); padding-bottom: 12px; text-decoration: none; }
 
