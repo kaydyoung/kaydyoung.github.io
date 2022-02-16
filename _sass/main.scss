@@ -43,7 +43,7 @@
   align-content: center;
   font-size: 12px;
   font-weight: 500;
-  //margin-left: 95%;
+  margin-left: 95%;
   margin-top: 25px;
   margin-right: 4vw;
   z-index: 100;
@@ -123,8 +123,8 @@ color: var(--mainText);
 
 .header {
   top: 0;
-  padding-top: 10vh;
-  margin-left: 4vw;
+  padding-top: 8vh;
+  margin-left: 3vw;
   height: 50px;
   width: 85vw;
   position: fixed;
@@ -143,8 +143,8 @@ color: var(--mainText);
   display: flex;
   flex-direction: column;
   position: fixed;
-  margin-left: 4vw;
-  top: 16vh;
+  margin-left: 3vw;
+  top: 18vh;
   overflow: hidden;
   font-size: 30px;
 }
@@ -165,7 +165,7 @@ color: var(--mainText);
   margin-left: 38vw;
   display: flex;
   flex-direction: row;
-  margin-top: 16vh;
+  margin-top: 14vh;
   margin-bottom: 6vh;
   align-items: center;
   overflow: hidden;
